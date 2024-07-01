@@ -2,6 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AppointmentsLayout from '../views/appointments/AppointmentsLayout.vue'
 import AuthAPI from '../api/AuthAPI'
+import LoginView from '../views/auth/LoginView.vue'// Asegúrate de que la ruta sea correcta
+
+
+
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -9,7 +14,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: LoginView
     },
     {
       path: '/admin',
